@@ -1,0 +1,36 @@
+# --- 构建产物（体积大，不分发）---
+YieldMap.exe
+*.exe
+*.rar
+*.zip
+build/
+dist/
+*.spec
+
+# --- 运行必需但含内部数据的资源（不下发）---
+TR&TW AddrID Vs ChipID.xlsx
+*.xlsx
+*.xls
+
+# --- 用户运行时自动生成的配置 ---
+yieldmap_config.json
+
+# --- Python 缓存 / 虚拟环境 ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.eggs/
+*.egg-info/
+
+# --- 测试 / 工具缓存 ---
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- 编辑器 / 系统 ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
